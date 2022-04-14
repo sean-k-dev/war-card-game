@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="War Card Game by Sean Kelly">
+    	<meta name="keywords" content="war, cards, API, game">
+		<link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/playing-card-diamond.png">
+
+		<title>WAR: Highest Card Wins</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>WAR</h1>
+		<h2>The side that draws a higher number wins</h2>
+
+		<button id="drawCards">Draw Your Card</button>
+
+		<div class="cardlayout">
+			<h3>Player 1:</h3>
+			<h3>Player 2:</h3>
+			<img id="playerOne" src="img/cardback.png" alt="Player One's Card">
+			<img id="playerTwo" src="img/cardback.png" alt="Player Two's Card">
+			<p>Cards remaining in the deck: <span id="remaining"></span></p>
+			<button id="reshuffle">Reshuffle Deck and Reset Scoreboard</button>
+		</div>
+
+		<div class="scoreboard">
+			<h3>Score:</h3>
+			<h4>Player 1: </h4><span id="p1Score">0</span>
+			<h4>Player 2: </h4><span id="p2Score">0</span>
+		</div>
+
+
+		<h4 id="outcome"></h4>
+		<h5>Made by Sean <a href="https://twitter.com/SeanIshigami">@SeanIshigami</a></h5>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

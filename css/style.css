@@ -1,0 +1,129 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Special+Elite&display=swap');
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 22px;
+  font-family: 'Playfair Display', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  background: black;
+  background-image: url(https://images.pexels.com/photos/3187173/pexels-photo-3187173.jpeg?cs=srgb&dl=pexels-nick-rtr-3187173.jpg);
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  overflow-x: scroll;
+}
+
+h1 {
+  font-family: 'Special Elite', 'Garamond', serif;
+  font-size: 80px;
+  margin: 25px 0 0px 0;
+}
+
+h2 {
+  margin-top: 5px;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+  width: auto;
+}
+
+button {
+  margin: 10px 0 40px 0;
+  padding: 30px 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.cardlayout {
+  display: grid;
+  height: 570px;
+  margin: 0 25%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 16% 74% 10%;
+  grid-template-areas: 
+  "card card"
+  "player player"
+  "remaining remaining";
+  border: 5px solid rgb(146, 16, 16);
+  border-radius: 20px;
+  background-color: rgb(207, 207, 207);
+  color: black;
+  text-shadow: none;
+  position: relative;
+}
+
+.scoreboard {
+  position: absolute;
+  left: 3%;
+  bottom: 40%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  grid-template-areas: 
+  "score score"
+  "p1 p1score"
+  "p2 p1score";
+  width: 300px;
+}
+
+.scoreboard h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.scoreboard h4 {
+  font-size: 30px;
+}
+
+.scoreboard span {
+  display: inline-block;
+  font-size: 40px;
+  margin: auto;
+}
+
+#reshuffle {
+  padding: 5px 40px;
+  font-size: 16px;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 42px;
+}
+
+a {
+  text-decoration: dotted;
+  color: red;
+}
+
+a:hover {
+  color: grey
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
